@@ -2,6 +2,9 @@ package robo_fundamentos.pucrs.br;
 
 public class Mapa {
 	int[][ ] mapa;
+	private int largura;
+	private int altura;
+	
 	public Mapa(int largura, int altura)
 	{
 		 mapa= new int[largura][altura] ;
@@ -16,5 +19,13 @@ public class Mapa {
 				System.out.printf("%d \t",mapa[i][j]);
 			}
 		}
+	}
+	public int getLargura()
+	{
+		return largura;
+	}
+	public int getAltura()
+	{
+		return altura;
 	}
 }
